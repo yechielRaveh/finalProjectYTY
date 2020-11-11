@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - invoiceProject</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body >
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <img id="logoHeader" src="https://myinvoice.co.il/static/theme/images/logo.png" />
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">דף הבית</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Privacy">החשבון שלי</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white">צור קשר</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="navWhite" class="my-2 my-lg-0">
+                    <a>הרשמה</a>
+                    <span> | </span>
+                    <a>התחברות</a>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <div class="render">
+
+        @RenderBody()
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footerspacer"> </div>
+
+    <footer dir="ltr" id="footer" class="page-footer font-small blue pt-4">
+
+        <!-- Footer Links -->
+        <div class=" text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-8 mt-md-0 mt-3">
+
+                    <!-- Content -->
+                    <img id="logoFooter" src="https://myinvoice.co.il/static/theme/images/logo.png" />
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                <div class="col-md-1 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase">אזור אישי</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a>החשבון שלי</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- Grid column -->
+                <div class="col-md-2 mb-md-0 mb-6 footerText">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase">תפריט ראשי</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a>דף הבית</a>
+                        </li>
+                        <li>
+                            <a>צור קשר</a>
+                        </li>
+                        <li>
+                            <a>אודות</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+        <!-- Copyright -->
+        <div id="footerZ" class="footer-copyright text-center py-3">
+            © 2020 Copyright:
+            <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
