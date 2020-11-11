@@ -6,11 +6,10 @@
     <title>@ViewData["Title"] - invoiceProject</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
-    <link rel="stylesheet" href="~/css/Login_page.css" />
 </head>
 <body >
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm  border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <img id="logoHeader" src="https://myinvoice.co.il/static/theme/images/logo.png" />
 
@@ -21,17 +20,17 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">דף הבית</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">דף הבית</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Privacy">החשבון שלי</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">החשבון שלי</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white">צור קשר</a>
+                            <a class="nav-link">צור קשר</a>
                         </li>
                     </ul>
                 </div>
-                <div id="navWhite" class="my-2 my-lg-0">
+                <div class="my-2 my-lg-0">
                     <a>הרשמה</a>
                     <span> | </span>
                     <a>התחברות</a>
@@ -47,46 +46,27 @@
     </div>
 
     <!-- Footer -->
-    <div class="footerspacer"> </div>
+    
 
-    <footer dir="ltr" id="footer" class="page-footer font-small blue pt-4">
-
-        <!-- Footer Links -->
-        <div class=" text-center text-md-left">
-
-            <!-- Grid row -->
-            <div class="row">
-
-                <!-- Grid column -->
-                <div class="col-md-8 mt-md-0 mt-3">
-
-                    <!-- Content -->
+    <footer dir="ltr" class="footer" >    
+        
+            <div class="row  no-gutters">
+                <div class="col-8">
                     <img id="logoFooter" src="https://myinvoice.co.il/static/theme/images/logo.png" />
+                </div>             
+             
 
-                </div>
-                <!-- Grid column -->
-
-                <hr class="clearfix w-100 d-md-none pb-3">
-
-                <div class="col-md-1 mb-md-0 mb-3">
-
-                    <!-- Links -->
+                <div class="col-2">
                     <h5 class="text-uppercase">אזור אישי</h5>
-
                     <ul class="list-unstyled">
                         <li>
                             <a>החשבון שלי</a>
                         </li>
                     </ul>
-
                 </div>
 
-                <!-- Grid column -->
-                <div class="col-md-2 mb-md-0 mb-6 footerText">
-
-                    <!-- Links -->
+                <div class="col-2">
                     <h5 class="text-uppercase">תפריט ראשי</h5>
-
                     <ul class="list-unstyled">
                         <li>
                             <a>דף הבית</a>
@@ -97,21 +77,11 @@
                         <li>
                             <a>אודות</a>
                         </li>
-
                     </ul>
-
                 </div>
-                <!-- Grid column -->
-                <!-- Grid column -->
-                <!-- Grid column -->
-
             </div>
-            <!-- Grid row -->
-
-        </div>
-        <!-- Footer Links -->
         <!-- Copyright -->
-        <div id="footerZ" class="footer-copyright text-center py-3">
+        <div id="Copyright" class="footer-copyright text-center py-3">
             © 2020 Copyright:
             <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
         </div>

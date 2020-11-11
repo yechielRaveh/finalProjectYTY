@@ -53,6 +53,10 @@ namespace invoiceProject.Controllers
              return View();
          }
         */
+        public async Task<IActionResult> Register()
+        {
+            return View();
+        }
 
 
         // GET: Users/Create
