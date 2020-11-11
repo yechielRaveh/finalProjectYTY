@@ -42,6 +42,18 @@ namespace invoiceProject.Controllers
 
             return View(user);
         }
+        // GET: Users
+        public async Task<IActionResult> Login()
+        {
+            return View();
+        }
+        /*// POST: Users/Login
+         public async Task<IActionResult> Login()
+         {
+             return View();
+         }
+        */
+
 
         // GET: Users/Create
         public IActionResult Create()
