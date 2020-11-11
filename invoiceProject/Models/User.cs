@@ -47,7 +47,7 @@ namespace invoiceProject.Models
         public DateTime EnteranceDate { get; set; }
 
         public ICollection<Invoice> Invoices { get; set; }
-        public ICollection<Credit> Credit_Invoice { get; set; }
+        public ICollection<Credit> Credit_Invoices { get; set; }
 
         public ICollection<UserGiftCard> userGiftCard { get; set; }
 
