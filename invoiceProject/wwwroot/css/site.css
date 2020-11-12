@@ -39,3 +39,48 @@ for details on configuring this project to bundle and minify static web assets. 
     color: white;
 }
 /*-----------------------FOOTER END-------------*/
+
+/*-------------------Fackbook & Twitter Icons START----------------*/
+
+.shareicon {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    cursor: pointer;
+    margin: 0px;
+    padding: 0px;
+}
+
+.shareicon li {
+    list-style: none;
+}
+
+.shareicon li a {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 50px;
+    color: #262626;
+    margin: 0px;
+}
+
+.fa-instagram:hover {
+    color: #bc2a8d
+}
+
+.fa-facebook:hover {
+    color: #3b5998
+}
+
+.fa-twitter:hover {
+    color: #00aced
+}
+.shareicon li a .fab {
+    font-size: 30px;
+    line-height: 35px;
+    transition: 0.5s;
+}
+/*-------------------Fackbook & Twitter Icons END----------------*/

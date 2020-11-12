@@ -99,7 +99,7 @@ header {
 .fab {
     display: inline-block;
     position: absolute;
-    color: #63b563;
+    color: #262626;
     transform: translate(-52%, 75%);
     font-size: 40px
 }
