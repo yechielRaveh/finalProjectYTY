@@ -1,9 +1,10 @@
 ﻿@{
     ViewData["Title"] = "Index";
-    
-
-
 }
+@section css {
+    <link href="@Url.Content("~/css/HomePage.css")" rel="stylesheet" />
+}
+
 
 <div class="text-center homeBackground">
     <br /><br /><br />
@@ -11,9 +12,7 @@
     <br /><br /><br />
     <h5>הצטרפו עכשיו לעולם מסודר יותר, כאן תמצאו את ארנק החשבוניות הדיגטלי מכל מקום!</h5>
     <br /><br /><br />
-    <button id="test" class="glow-on-hover" type="button">להצטרפות</button>
-
-
+    <div style="padding-bottom:100px;">
+        <button id="test" class="glow-on-hover" type="button">להצטרפות</button>
+    </div>
 </div>
-
-

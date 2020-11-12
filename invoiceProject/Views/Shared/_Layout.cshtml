@@ -6,6 +6,7 @@
     <title>@ViewData["Title"] - invoiceProject</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    @RenderSection("css", false)
 </head>
 <body >
     <header>
@@ -26,23 +27,22 @@
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">החשבון שלי</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">צור קשר</a>
+                            <a class="nav-link" asp-controller="Home" asp-action="ContactUs">צור קשר</a>
                         </li>
                     </ul>
                 </div>
                 <div class="my-2 my-lg-0">
-                    <a>הרשמה</a>
+                    <a asp-controller="Users" asp-action="Register">הרשמה</a>
                     <span> | </span>
-                    <a>התחברות</a>
+                    <a asp-controller="Users" asp-action="Login">התחברות</a>
                 </div>
 
             </div>
         </nav>
     </header>
-    <div class="render">
 
+    <div >
         @RenderBody()
-
     </div>
 
     <!-- Footer -->
@@ -60,7 +60,7 @@
                     <h5 class="text-uppercase">אזור אישי</h5>
                     <ul class="list-unstyled">
                         <li>
-                            <a>החשבון שלי</a>
+                            <a asp-controller="Home" asp-action="Privacy">החשבון שלי</a>
                         </li>
                     </ul>
                 </div>
@@ -69,10 +69,10 @@
                     <h5 class="text-uppercase">תפריט ראשי</h5>
                     <ul class="list-unstyled">
                         <li>
-                            <a>דף הבית</a>
+                            <a asp-controller="Home" asp-action="Index">דף הבית</a>
                         </li>
                         <li>
-                            <a>צור קשר</a>
+                            <a asp-controller="Home" asp-action="ContactUs">צור קשר</a>
                         </li>
                         <li>
                             <a>אודות</a>
