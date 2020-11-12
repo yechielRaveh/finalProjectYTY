@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+@section css {
+    <link href="@Url.Content("~/css/AboutUs.css")" rel="stylesheet" />
+}
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+<main>
+    <div class="about">
+        <div class="title">
+            <h1 style="font-weight:bolder;">אודותנו</h1>
+        </div>
+        <div class="desc">
+            <p>כאן תוכלו סוף סוף למצוא את הסדר שתמיד רציתם! לא תצטרכו יותר לשמור חשבוניות בארנק. <br /> פה באתר שלנו תוכלו להינות מהזנת נתוני החשבוניות והם נשמרים לכם במשתמש הפרטי שלכם!</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="card">
+            <div class="card_img"> <i class="fas fa-rocket"></i> </div>
+            <div class="card_title">חשבוניות</div>
+            <div class="card_body">
+                <p>צפייה בחשבוניות \ הוספת חשבונית \ מחיקת חשבונית</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_img"> <i class="fab fa-cloudversify"></i> </div>
+            <div class="card_title">זיכויים</div>
+            <div class="card_body">
+                <p>צפייה בזיכויים \ הוספת זיכוי \ מחיקת זיכוי</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_img"> <i class="fas fa-user-astronaut"></i> </div>
+            <div class="card_title">Gift Cards</div>
+            <div class="card_body">
+                <p>צפייה בגיפט קארדים \ הוספת גיפט קארד \ מחיקת גיפט קארד</p>
+            </div>
+        </div>
+    </div>
+</main>

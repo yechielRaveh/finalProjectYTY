@@ -8,6 +8,7 @@ namespace invoiceProject.Controllers
 {
     public class HomeController : Controller
     {
+        //GET
         public IActionResult Index()
         {
             return View();
@@ -16,5 +17,15 @@ namespace invoiceProject.Controllers
         {
             return View();
         }
+        //POST
+        //public IActionResult ContactUs()
+        //{
+        //    return View();
+        //}
+        public IActionResult AboutUs()
+        {
+            return View();
+        }
+
     }
 }
