@@ -111,6 +111,7 @@ a {
     transition: 0.5s;
 }
 /*-------------------Fackbook & Twitter Icons END----------------*/
+
 /**********************Login & Signin********************/
 .LoginClass {
     float: left;
@@ -120,10 +121,10 @@ a {
 }
 
 .SignButton {
-    background-color: #007bff;
+    background-color: #808080;
     display: inline-block;
     padding: 3px 15px 3px;
-    font-size: 24px;
+    font-size: 17px;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
@@ -134,12 +135,11 @@ a {
 }
 
     .SignButton:hover {
-        background-color: #116ed2;
-      
+        background-color: #000000;
     }
 
     .SignButton:active {
-        background-color: #116ed2;
+        background-color: #000000;
         transform: translateY(4px);
     }
 /***********END**************/

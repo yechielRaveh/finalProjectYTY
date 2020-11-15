@@ -1,1 +1,30 @@
-﻿
+﻿.about p {
+    width: 500px;
+    margin-top: 0px;
+    text-align: right;
+    padding: 0px;
+    margin-top: 50px;
+}
+.about2 p {
+    width: 500px;
+    margin-top: 0px;
+    text-align: right;
+    padding: 0px;
+    margin-right:53px;
+}
+.rightImg {
+    width: 460px;
+    padding: 0px;
+    margin-top: 50px;
+    margin-bottom:20px;
+    margin-right:40px;
+    float: right;
+}
+.Video {
+    width :560px;
+    height:315px;
+    float: right;
+    margin-bottom: 25px;
+    margin-right: 115px;
+    margin-top:24px;
+}
