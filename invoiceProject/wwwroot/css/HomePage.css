@@ -1,8 +1,8 @@
 ﻿
 /*----------------------HOME page back-ground/*----------------------*/
 .homeBackground {
-    background: rgb(141,212,238);
-    background: linear-gradient(0deg, rgba(141,212,238,1) 0%, rgba(139,195,213,1) 28%, rgba(255,255,255,1) 79%);
+    //background: rgb(141,212,238);
+   // background: linear-gradient(0deg, rgba(141,212,238,1) 0%, rgba(139,195,213,1) 28%, rgba(255,255,255,1) 79%);
 }
 
 /*---------------------Glow Button----------------------*/

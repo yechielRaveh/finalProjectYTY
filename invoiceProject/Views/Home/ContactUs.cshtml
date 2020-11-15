@@ -1,26 +1,63 @@
 ﻿@{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "ContactUs";
+    Layout = "_Layout";
 }
 @section css {
-    <link href="@Url.Content("~/css/Form.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/css/ContactUs.css")" rel="stylesheet" />
 }
 
-<div class="wrapper fadeInDown">
 
-    <div id="formContent">
-        <!-- Tab Titles -->
-        <h2 class="active">CONTACT US</h2>
+<!--Section: Contact v.2-->
+<section>
 
-
-
-        <!-- ContactUs Form -->
-        <form>
-            <input type="text" id="UserName" class="fadeIn second" name="UserName" placeholder=" שם משתמש" style="text-align:right;">
-            <input type="email" id="Email" class="fadeIn second" name="Email" placeholder="כתובת אימייל" style="text-align:right;">
-            <textarea type="text" a id="message" rows="6" class="fadeIn second" required="" name="message" placeholder="כתוב הודעה" style="text-align:right; padding: 3px 3px 10px 10px;"></textarea>
-            <input type="submit" class="fadeIn fourth" value="שלח הודעה">
-        </form>
+    <!--Section heading-->
 
 
+    <div class="row" style="margin-left: 0px !important; margin-right: 0px !important;">
+
+        <div class="col-md-5 mb-md-0 mb-5">
+            <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <label for="name" class="">Your name</label>
+                            <input type="text" id="name" name="name" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <label for="email" class="">Your email</label>
+                            <input type="text" id="email" name="email" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <label for="subject" class="">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form">
+                            <label for="message">Your message</label>
+                            <textarea type="text" id="message" name="message" rows="7" class="form-control md-textarea"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div >
+                    <input class="formSubmit" type="submit" value="שליחה" />
+                </div>
+
+            </form>
+        </div>
+        <div class="col-md-7 mb-md-0 mb-5" style="padding-right: 0px !important; padding-left: 0px !important;">
+            <img style="width: inherit;" src="~/images/bg-01.jpg" />
+        </div>
     </div>
-</div>
+
+</section>

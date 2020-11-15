@@ -10,9 +10,36 @@ for details on configuring this project to bundle and minify static web assets. 
 }*/
 
 /*-----------------------navbar START----------------*/
-.navbar a {
-    color: #000;
+
+body {
+    background-color: #fff;
+    
 }
+
+.navbar {
+    font-family: "Open Sans Hebrew", Sans-serif;
+    font-size: 20px;
+    height: 80px;
+}
+.nav-link {
+    color: #000 !important;
+}
+.nav-link:hover {
+    color: #808080 !important;
+}
+
+a {
+    color: #000;
+    text-decoration: none !important;
+}
+.AfontWhite, .AfontWhite:hover {
+    color: white !important;
+}
+
+.navbar-toggler-icon {
+    color: black;
+}
+
 #logoHeader {
     width: 120px;
     height: 26.75px;
@@ -84,3 +111,49 @@ for details on configuring this project to bundle and minify static web assets. 
     transition: 0.5s;
 }
 /*-------------------Fackbook & Twitter Icons END----------------*/
+/**********************Login & Signin********************/
+.LoginClass {
+    float: left;
+}
+.RegisterClass {
+    margin-left: 10px;    
+}
+
+.SignButton {
+    background-color: #007bff;
+    display: inline-block;
+    padding: 3px 15px 3px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+}
+
+    .SignButton:hover {
+        background-color: #116ed2;
+      
+    }
+
+    .SignButton:active {
+        background-color: #116ed2;
+        transform: translateY(4px);
+    }
+/***********END**************/
+
+
+
+
+/******************************/
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0px !important; 
+    margin-left: 0px !important; 
+}
+/******************************/

@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - invoiceProject</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/MyAccount.css" />
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+          rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <!--Social media icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" />
+
+    @RenderSection("css", false)
+
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-light navbar-expand-sm navbar-toggleable-sm   box-shadow mb-3">
+            <div class="container-fluid">
+                <img id="logoHeader" src="https://myinvoice.co.il/static/theme/images/logo.png" />
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">דף הבית</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">החשבון שלי</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Home" asp-action="ContactUs">צור קשר</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Home" asp-action="AboutUs">אודות</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="my-2 my-lg-0">
+                    @*<a asp-controller="Users" asp-action="Register">הרשמה</a>*@
+                    <div>
+                        <button class="LoginClass SignButton">
+                            <a class="AfontWhite" asp-controller="Users" asp-action="Register">הרשמה</a>
+                        </button>
+
+                        <button class="RegisterClass SignButton">
+                            <a class="AfontWhite" asp-controller="Users" asp-action="Login">התחברות</a>
+                        </button>
+                    </div>
+                    @*<button asp-controller="User" asp-action="Register" class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">התחברות</button>
+                        <button asp-controller="User" asp-action="Login" class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">כניסה</button>*@
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <div id="page-top">
+
+        <!-- Page Wrapper -->
+        <div id="wrapper">
+
+            @*Sidebar*@
+            <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+                <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                    <div class="sidebar-brand-icon rotate-n-15">
+                        <i class="fas fa-laugh-wink"></i>
+                    </div>
+                    <div class="sidebar-brand-text mx-3">שלום פלוני</div>
+                </a>
+
+                @*Divider*@
+                <hr class="sidebar-divider my-0">
+
+                @*החשבון שלי*@
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">
+                        <i class="fas fa-file-invoice"></i>
+                        <span>החשבון שלי</span>
+                    </a>
+                </li>
+                <hr class="sidebar-divider">
+
+
+                @************************************START INVOICES******************************@
+                <div class="sidebar-heading">
+                    חשבוניות
+                </div>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">
+                        <i class="fas fa-file-invoice"></i>
+                        <span>צפייה בחשבוניות</span>
+                    </a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">
+                        <i class="fas fa-file-invoice"></i>
+                        <span>הוסף חשבונית</span>
+                    </a>
+                </li>
+                <hr class="sidebar-divider">
+                @************************************END INVOICES*****************************
+            ***********************************START CREDIT******************************@
+                <div class="sidebar-heading">
+                    זיכויים
+                </div>
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">
+                        <i class="fas fa-file-invoice"></i>
+                        <span>צפייה בזיכויים</span>
+                    </a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">
+                        <i class="fas fa-file-invoice"></i>
+                        <span>הוסף זיכוי</span>
+                    </a>
+                </li>
+                <hr class="sidebar-divider">
+                @************************************END CREDITS*****************************
+            ***********************************START WARRANTY******************************@
+                <div class="sidebar-heading">
+                    אחריות
+                </div>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">
+                        <i class="fas fa-file-invoice"></i>
+                        <span>צפייה באחריות</span>
+                    </a>
+                </li>
+                <hr class="sidebar-divider d-none d-md-block">
+                @************************************END WARRANTY******************************@
+
+
+            </ul>
+            @*End of Sidebar*@
+            
+            @RenderBody()
+
+
+        </div>
+
+    
+    <!-- Footer -->
+    <footer dir="ltr" class="footer">
+
+        <div class="row  no-gutters">
+            <div class="col-8">
+                <img id="logoFooter" src="https://myinvoice.co.il/static/theme/images/logo.png" />
+            </div>
+
+            <div class="col-1">
+                <ul class="shareicon">
+                    <li title="instagram"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li title="facebook"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li title="twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="col-1">
+                <h5 class="text-uppercase">אזור אישי</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <a asp-controller="Home" asp-action="Privacy">החשבון שלי</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-2">
+                <h5 class="text-uppercase">תפריט ראשי</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <a asp-controller="Home" asp-action="Index">דף הבית</a>
+                    </li>
+                    <li>
+                        <a asp-controller="Home" asp-action="ContactUs">צור קשר</a>
+                    </li>
+                    <li>
+                        <a asp-controller="Home" asp-action="AboutUs">אודות</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div id="Copyright" class="footer-copyright text-center py-3">
+            © 2020 Copyright:
+            <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
+
+
+

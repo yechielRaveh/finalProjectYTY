@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm  border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-light navbar-expand-sm navbar-toggleable-sm   box-shadow mb-3">
             <div class="container-fluid">
                 <img id="logoHeader" src="https://myinvoice.co.il/static/theme/images/logo.png" />
 
@@ -38,9 +38,18 @@
                     </ul>
                 </div>
                 <div class="my-2 my-lg-0">
-                    <a asp-controller="Users" asp-action="Register">הרשמה</a>
-                    <span> | </span>
-                    <a asp-controller="Users" asp-action="Login">התחברות</a>
+                    @*<a asp-controller="Users" asp-action="Register">הרשמה</a>*@
+                    <div >
+                        <button  class="LoginClass SignButton" >
+                            <a class="AfontWhite" asp-controller="Users" asp-action="Register">הרשמה</a>
+                        </button>
+                        
+                        <button  class="RegisterClass SignButton">
+                            <a class="AfontWhite" asp-controller="Users" asp-action="Login">התחברות</a>
+                        </button>
+                    </div>
+                    @*<button asp-controller="User" asp-action="Register" class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">התחברות</button>
+                    <button asp-controller="User" asp-action="Login" class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">כניסה</button>*@
                 </div>
 
             </div>

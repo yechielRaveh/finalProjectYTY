@@ -161,6 +161,12 @@ namespace invoiceProject.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        public async Task<IActionResult> MyAccount()
+        {
+            return View();
+        }
+
+
         private bool UserExists(int id)
         {
             return _context.User.Any(e => e.UserID == id);
