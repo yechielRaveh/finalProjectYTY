@@ -165,7 +165,15 @@ namespace invoiceProject.Controllers
         {
             return View();
         }
-
+        public async Task<IActionResult> ViewInvoices()
+        {
+            return View();
+        }
+        public async Task<IActionResult> ViewCredits()
+        {
+            return View();
+        }
+        
 
         private bool UserExists(int id)
         {

@@ -1,0 +1,66 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "_UserLayout";
+}
+@section css {
+    <link href="@Url.Content("~/css/ViewInvoices.css")" rel="stylesheet" />
+}
+
+
+<div class="TableDiv">
+
+    <p ><h1>זיכויים</h1></p>
+    <div>
+        <input id="myInput" type="text" name="search" onkeyup="myFunction()" placeholder="חיפוש...">
+    </div>
+
+    <table id="myTable" class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th onclick="sortTable(0)">שם החנות</th>
+                <th onclick="sortTable(1)">קטגוריה</th>
+                <th onclick="sortTable(2)">תאריך קנייה</th>
+                <th onclick="sortTable(3)">סכום</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ZARA</td>
+                <td>ביגוד</td>
+                <td>01/11/2021</td>
+                <td>400₪</td>
+            </tr>
+            <tr>
+                <td>עידן 2000</td>
+                <td>צעצועים</td>
+                <td>02/02/2020</td>
+                <td>300₪</td>
+            </tr>
+            <tr>
+                <td>ADIDAS</td>
+                <td>ביגוד</td>
+                <td>11/07/2019 </td>
+                <td>500₪</td>
+            </tr>
+            <tr>
+                <td>Shoshi-Yegudayov</td>
+                <td>של הביוקר!</td>
+                <td>23/07/2019 </td>
+                <td>999₪</td>
+            </tr>
+            <tr>
+                <td>מחסני-חשמל</td>
+                <td>חשמל</td>
+                <td>11/07/2019 </td>
+                <td>800₪</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+@section Scripts{
+   
+    <script src="~/js/Sort_Tables.js" ></script>
+
+}
