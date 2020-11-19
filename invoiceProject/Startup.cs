@@ -55,7 +55,7 @@ namespace invoiceProject
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Users}/{action=MyAccount}/{id?}");
+                    pattern: "{controller=Users}/{action=NewInvoice}/{id?}");
             });
         }
     }

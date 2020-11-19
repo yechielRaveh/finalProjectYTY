@@ -173,7 +173,14 @@ namespace invoiceProject.Controllers
         {
             return View();
         }
-        
+        public async Task<IActionResult> NewInvoice()
+        {
+            return View();
+        }
+        public async Task<IActionResult> NewCredit()
+        {
+            return View();
+        }
 
         private bool UserExists(int id)
         {
