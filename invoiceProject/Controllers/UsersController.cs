@@ -182,6 +182,11 @@ namespace invoiceProject.Controllers
             return View();
         }
 
+        public async Task<IActionResult> Admin()
+        {
+            return View();
+        }
+
         private bool UserExists(int id)
         {
             return _context.User.Any(e => e.UserID == id);
